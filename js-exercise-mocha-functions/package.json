@@ -1,0 +1,17 @@
+{
+  "name": "mocha-test-palindrome",
+  "version": "1.0.0",
+  "description": "## Exercise Objectives - introduce Mocha for Javascript Testing - pro skills: gain ways to think about code through test cases - practice setting up and writing your own tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.7"
+  }
+}
