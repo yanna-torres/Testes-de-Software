@@ -1,0 +1,19 @@
+{
+  "name": "cucumber-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.2"
+  },
+  "dependencies": {
+    "@wdio/cli": "^8.10.5",
+    "webdriverio": "^8.10.5"
+  }
+}
