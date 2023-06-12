@@ -3,7 +3,7 @@ module.exports = function calculateSalary(jobRole, salary) {
 
     if (salary <= 0) {
         throw new Error('InvalidSalaryException: Salary must be a positive value');
-      }
+    }
 
     if (typeof salary != typeof 10.0) {
         throw new Error('InvalidSalaryException: Salary must be a number');

@@ -120,7 +120,7 @@ describe("Calculate Salary reduction", () => {
 
     context("Wrong Entries", () => {
 
-        context("Wrong entries of employee", () => {
+        context("Wrong entries of employees", () => {
 
             it("should raise an exception for a a type of employee that doesn't exist", () => {
                 assert.throws(() => calculateSalary("Analyst", 2000.0), Error, "InvalidJobRoleException");
@@ -139,19 +139,19 @@ describe("Calculate Salary reduction", () => {
         context("Wrong entries of salary", () => {
 
             it("should raise an exception for a salary equal to 0.0", () => {
-                assert.throws(() => calculateSalary("developer", 0), Error, "InvalidSalaryException");
+                assert.throws(() => calculateSalary("Developer", 0), Error, "InvalidSalaryException");
             })
     
             it("should raise an exception for a negative salary", () => {
-                assert.throws(() => calculateSalary("developer", 0), Error, "InvalidSalaryException");
+                assert.throws(() => calculateSalary("Developer", -5000.0), Error, "InvalidSalaryException");
             })
         
             it("should raise an exception for a salary with text", () => {
-                assert.throws(() => calculateSalary("developer", "0"), Error, "InvalidSalaryException");
+                assert.throws(() => calculateSalary("Developer", "0"), Error, "InvalidSalaryException");
             })
         
             it("should raise an exception for an empty salary", () => {
-                assert.throws(() => calculateSalary("developer"), Error, "InvalidSalaryException");
+                assert.throws(() => calculateSalary("Developer"), Error, "InvalidSalaryException");
             })
             
         })
